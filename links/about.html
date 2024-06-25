@@ -1,0 +1,200 @@
+    <!DOCTYPE html>
+    <html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../styles.css">
+        <title>OmniCloud - Über uns</title>
+        <style>
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f8f9fa;
+                color: #333;
+                transition: background-color 0.5s ease;
+            }
+
+            header {
+                background-color: #3498db;
+                color: #fff;
+                text-align: center;
+                padding: 2em 0;
+                transition: background-color 0.5s ease, color 0.5s ease;
+            }
+
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 20px;
+            }
+
+            .title {
+                font-size: 2.5em;
+                margin-bottom: 0.2em;
+                animation: fadeInDown 1s ease;
+            }
+
+            .subtitle {
+                font-size: 1.2em;
+                margin-bottom: 2em;
+                animation: fadeInUp 1s ease;
+            }
+
+            nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+            position: relative;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: color 0.3s ease, background-color 0.3s ease;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #2072b1;
+        }
+        .dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: #333;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+
+        nav a:hover {
+            color: #fff;
+            background-color: #0056b3;
+        }
+            section {
+                margin: 20px auto;
+                padding: 20px;
+                background-color: #f2f2f2;
+                text-align: center;
+                max-width: 800px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                border-radius: 8px;
+            }
+
+            .section-title {
+                font-size: 2em;
+                margin-bottom: 1em;
+                color: #333;
+            }
+
+            p {
+                margin-top: 20px;
+            }
+
+            footer {
+                background-color: #333;
+                color: #fff;
+                text-align: center;
+                padding: 2em 0;
+            }
+
+            @keyframes fadeInDown {
+                from {
+                    opacity: 0;
+                    transform: translateY(-20px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            @keyframes fadeInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header style="background-color: #3498db; color: #fff;">
+            <div class="container">
+                <h1 class="title">Über uns</h1>
+                <p class="subtitle">Erfahren Sie mehr über das Team von OmniCloud</p>
+                
+                <!-- Navbar -->
+                <nav>
+                    <ul>
+                        <li><a href="../index.php">Startseite</a></li>
+                        <li><a href="./pricing.html">Preise</a></li>
+                        <li><a href="./umsatzberechnung.php">Umsatzberechnung</a></li>
+                        <li class="dropdown">
+                            <a href="#">Kontakt</a>
+                            <div class="dropdown-content">
+                                <a href="./contact.php">Allgemeine Kontaktaufnahme</a>
+                                <a href="./resign.php">Kündigung</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="container">
+            <section>
+                <h2 class="section-title">Unsere Geschichte</h2>
+                <p>OmniCloud wurde im Jahr 2022 von einer Gruppe von Experten im Bereich Cloud-Technologie gegründet. Unser Ziel ist es, Unternehmen und Entwicklern eine innovative und leistungsstarke Cloud-Infrastruktur zu bieten.</p>
+                
+                <h2 class="section-title">Unser Team</h2>
+                <p>Unser Team besteht aus hochqualifizierten Ingenieuren, Entwicklern und Cloud-Architekten. Jedes Mitglied bringt einzigartige Fähigkeiten und Erfahrungen mit, um sicherzustellen, dass OmniCloud Spitzenleistungen in der Cloud-Bereitstellung bietet.</p>
+
+                <h2 class="section-title">Kontaktieren Sie uns</h2>
+                <p>Sie möchten mehr über uns erfahren oder haben Fragen zu unseren Dienstleistungen? Kontaktieren Sie uns über unser <a href="./contact.php">Kontaktformular</a>.</p>
+            </section>
+        </div>
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2023 OmniCloud</p>
+            </div>
+        </footer>
+    </body>
+    </html>

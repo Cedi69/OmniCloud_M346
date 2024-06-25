@@ -1,0 +1,4 @@
+Server: Small, CPU: 4, RAM: 4096, SSD: 80, Total Price: 98, Secret Number: 657ff7d9e1692
+Server: Medium, CPU: 2, RAM: 16384, SSD: 500, Total Price: 420, Secret Number: 657ff80e0192d
+Server: Medium, CPU: 1, RAM: 8192, SSD: 1000, Total Price: 585, Secret Number: 657ff81780308
+Server: Big, CPU: 16, RAM: 32768, SSD: 500, Total Price: 615, Secret Number: 657ff81f8e296

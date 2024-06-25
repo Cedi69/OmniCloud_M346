@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+            transition: background-color 0.5s ease;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 2em 0;
+            transition: background-color 0.5s ease, color 0.5s ease;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .title {
+            font-size: 2.5em;
+            margin-bottom: 0.2em;
+            animation: fadeInDown 1s ease;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            margin-bottom: 2em;
+            animation: fadeInUp 1s ease;
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: color 0.3s ease, background-color 0.3s ease;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #2072b1;
+        }
+
+        nav a:hover {
+            color: #fff;
+            background-color: #0056b3;
+        }
+
+        section {
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            text-align: center;
+            max-width: 800px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .section-title {
+            font-size: 2em;
+            margin-bottom: 1em;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        p {
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 2em 0;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header style="background-color: #3498db; color: #fff;">
+        <div class="container">
+            <h1 class="title">Preise bei OmniCloud</h1>
+            <p class="subtitle">Wählen Sie die Ressourcen, die zu Ihren Anforderungen passen</p>
+            
+            <!-- Navbar -->
+            <nav>
+                <ul>
+                    <li><a href="../index.php">Startseite</a></li>
+                    <li><a href="./about.html">Über uns</a></li>
+                    <li><a href="./contact.php">Kontakt</a></li>
+                    <li><a href="./umsatzberechnung.php">Umsatzberechnung</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2 class="section-title">Unsere Preise</h2>
+            <p>Bei OmniCloud bieten wir flexible Preise, die es Ihnen ermöglichen, die benötigten Ressourcen zu wählen. Sehen Sie sich unsere Optionen unten an:</p>
+           
+            <table>
+                <tr>
+                    <th>Option</th>
+                    <th>Preis</th>
+                </tr>
+                <tr>
+                    <td>1 Core (5 CHF)</td>
+                    <td>5 CHF pro Monat</td>
+                </tr>
+                <tr>
+                    <td>2 Cores (10 CHF)</td>
+                    <td>10 CHF pro Monat</td>
+                </tr>
+                <tr>
+                    <td>4 Cores (18 CHF)</td>
+                    <td>18 CHF pro Monat</td>
+                </tr>
+                <tr>
+                    <td>8 Cores (30 CHF)</td>
+                    <td>30 CHF pro Monat</td>
+                </tr>
+                <tr>
+                    <td>16 Cores (45 CHF)</td>
+                    <td>45 CHF pro Monat</td>
+                </tr>
+                <!-- Fügen Sie weitere Optionen hier hinzu -->
+            </table>
+            
+            <p>Die Preise für RAM und SSD sind ebenfalls verfügbar. Wählen Sie die Kombination, die Ihren Anforderungen entspricht und bestellen Sie Ihre VM noch heute!</p>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 OmniCloud</p>
+        </div>
+    </footer>
+</body>
+</html>
